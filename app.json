@@ -1,0 +1,49 @@
+{
+  "expo": {
+    "name": "site-master-app",
+    "slug": "site-master-app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/loading_logo.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#5C1886"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "permissions": [
+        "android.permission.ACCESS_COARSE_LOCATION",
+        "android.permission.ACCESS_FINE_LOCATION",
+        "android.permission.FOREGROUND_SERVICE"
+      ],
+      "package": "com.sitemaster.sitemasterapp"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Allow SiteMaster to use your location."
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "d1f3d5a3-875c-4cab-8e9e-3396af4b645b"
+      }
+    }
+  }
+}
